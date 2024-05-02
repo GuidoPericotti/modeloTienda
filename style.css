@@ -5,6 +5,8 @@
     padding: 0;
     font-family: sans-serif;
     user-select: none;
+    /*border-style: solid;
+    border-color: red;*/
 }
 
 /*QUERIES*/
@@ -129,4 +131,145 @@ nav {
     position: absolute;
     color: #fff;
     font-size: 1.4rem;
+}
+
+/*Boton Whatsapp flotante*/
+.whatsapp-button {
+    position: fixed;
+    bottom: 150px;
+    right: 40px;
+    width: 80px;
+    height: 80px;
+    background-color: #25d366;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 10;
+}
+  
+.whatsapp-button img {
+    position: fixed;
+    filter: invert();
+    bottom: 170px;
+    right: 60px;
+    width: 40px;
+    height: 40px;
+}
+  
+.whatsapp-button:hover {
+    background-color: #128c7e;
+}
+
+/*FOOTER*/
+.footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2%;
+}
+/*redes*/
+.redesFooter {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 8vw;
+    width: 20%;
+    font-size: 1.2rem;
+}
+
+.redes {
+    height: 3.5vw;
+    width: 3.5vw;
+    margin-top: 6%;
+}
+
+/*suscripcion*/
+.suscripcion {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 30%;
+    padding: 1%;
+}
+
+.suscripcion > h2 {
+    font-size: 1.3rem;
+}
+
+.correo {
+    width: 70%;
+    background: #ebebeb;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 2%;
+    margin-top: 4%;
+    border: 1px solid #b4b5b6;
+    font-size: 1.2rem;
+}
+.correo:hover {
+    color: #000;
+    background-color: #ddd8d8;
+}
+
+.enviar {
+    width: 50%;
+    background: #75777c;
+    border: none;
+    padding: 2%;
+    color: white;
+    margin: 2% 0;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+.enviar:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/*faq's*/
+.faqs {
+    display: flex;
+    flex-flow: column nowrap;
+    text-decoration: none;
+    width: 15%;
+}
+
+.faqs > h3 {
+    font-size: 1.6rem;
+}
+
+.faqs > a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1rem;
+    padding: 2%;
+}
+
+/*divisoriaFooter*/
+.hr {
+    height: 4px;
+    background-color: black;
+    margin: 1% 3% 1% 3%;
+}
+
+/*politicasDataFiscal*/
+.legales {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-around;
+    align-items: end;
+    margin-bottom: 1%;
+}
+
+.legales > a {
+    text-decoration: none;
+    color: #000;
+}
+
+.dataFiscal {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 8vh;
 }
