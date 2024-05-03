@@ -1,0 +1,81 @@
+.fieldset {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin: 1% 25% 0%;
+    border: none;
+}
+
+.formulario {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.formulario > h2 {
+    font-size: 3rem;
+    margin: 2%;
+}
+
+.label {
+    font-size: 1.2rem;
+    font-weight:bolder;
+}
+
+.formInput {
+    background: #ebebeb;
+    padding: 1%;
+    margin: 1% 0%;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px rgb(61, 59, 59);
+    font-size: 1.2rem;
+}
+
+.select {
+    background: #ebebeb;
+    width: 30%;
+    padding: 1%;
+    margin: 1.5% 2% 2%;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+textarea {
+    width: 100%;
+    background-color: #ebebeb;
+    padding: 2%;
+    border-radius: 5px;
+    font-size: 1.4rem;
+}
+
+.novedades {
+    margin: 2% 0%;
+    font-size: 1.2rem;
+}
+
+.novedades > input {
+    width: 16px;
+    height: 16px;
+}
+
+.submit {
+    width: 30%;
+    padding: 2%;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+.submit:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.horario {
+    padding: 10% 0% 10% 45%;
+    font-size: 1.6rem;
+    align-items: end;
+    justify-content: center;
+}
+.horario > h4 {
+    padding-bottom: 1.5%;
+}
+
+

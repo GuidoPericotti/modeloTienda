@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modeloTienda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <!--HEADER & NAV-->
+    <header>
+        <h1>modeloTienda</h1>
+        <nav>
+            <ul class="nav-selector">
+                <li class="nav-item"><a class="nav-item-selector" href="#"></a>INICIO</li>
+                <li class="nav-item"><a href="#"></a>TIENDA</li>
+                <li class="nav-item"><a href="#"></a>NOSOTROS</li>
+                <li class="nav-item"><a href="#"></a>CONTACTO</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--MAIN & CONTENT-->
+    <main>
+        <section class="first-section">
+            <img class="imagen-portada" src="/img/first-section.jpg" alt="Portada de la tienda">
+        </section>
+
+        <fieldset class="fieldset">
+            <form name="formulario" class="formulario">
+                <h2>Formulario de Consultas</h2>
+                <label class="label" for="nombre">Nombres</label>
+                <input class="formInput" type="text" name="nombre" required placeholder="Juan...">
+                <label class="label" for="apellido">Apellidos</label>
+                <input class="formInput" type="text" name="apellido" required placeholder="Gomez...">
+                <label class="label" for="email">Email</label>
+                <input class="formInput" type="email" name="email" required size="20" placeholder="miTienda@example.com">
+                <label class="label" for="telefono">Telefono</label>
+                <input class="formInput" type="number" name="telefono" size="10" placeholder="1133000587">
+                
+                <div>
+                    <label class="label" for="consulta">Consulta</label>
+                    <select  class="select" name="consulta" required>
+                        <option value="1">...</option>
+                        <option value="2">Pagos</option>
+                        <option value="3">Envios</option>
+                        <option value="4">Devoluciones</option>
+                        <option value="5">Compras</option>
+                        <option value="6">Otro</option>
+                    </select>
+                </div>
+
+                <textarea name="comentarios" cols="30" rows="10" placeholder="Dejanos tu consulta..."></textarea>
+                
+                <div class="novedades">
+                    <input type="checkbox" name="recibir_novedades">
+                    <label for="recibir_novedades">Recibir novedades y promociones</label>
+                </div>
+                
+                <input class="submit" type="submit"  value="Enviar datos">
+            </form>
+            <div class="horario">
+                <h4>Nuestro horario de atencion es de: </h4>
+                <p>Lunes - Sabado: 8:00 AM  -  8:00 PM</p>
+            </div>
+        </fieldset>
+
+
+    </main>
+
+    <!--FOOTER & SOCIAL-->
+    <footer>
+        <div class="footer">
+            <div class="redesFooter">
+                <h2>SEGUINOS</h2>
+                <div>
+                    <img href="www.google.com" class="redes" src="img/facebook.svg" alt="facebook"></img>
+                    <img class="redes" src="img/instagram.png" alt="instragram"></img>
+                    <img class="redes" src="img/twiter.png" alt="twiter"></img>
+                    <img class="redes" src="img/youtube.png" alt="youtube"></img>
+                </div>
+            </div>
+
+            <div class="suscripcion">
+                <h2>SUSCRIBETE</h2>
+                <input class="correo" type="text" name="email" placeholder="contacto@miTienda.com" value="">
+                <input class="enviar" type="submit" value="Enviar">
+            </div>
+
+            <div class="faqs">
+                <h3>FAQ'S</h3>
+                <a href="">Preguntas Frecuente</a>
+                <a href="">Contacto</a>
+                <a href="">Nosotros</a>
+            </div>
+        </div>
+        <hr class="hr">
+        <div class="legales">
+            <a href="">Cómo cancelar mi compra</a>
+            <a href="">Defensa del Consumidor</a>
+            <a href="">Politicas de privacidad</a>
+            <a href="">Avisos legales</a>
+            <a class="dataFiscal" href="http://qr.afip.gob.ar/?qr=vsaPnc3cXT60iCx7lH_tfw,," target="_F960AFIPInfo"><img src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg" border="0"></a>
+        </div>
+</footer>
+</body>
+</html>
