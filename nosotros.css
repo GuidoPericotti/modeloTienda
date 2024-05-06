@@ -1,11 +1,17 @@
+main {
+display: flex;
+flex-flow: column nowrap;
+width: 100vw;
+}
+
 h2 {
-    font-size: 3.5rem;
-    margin: 3% 40%;
+    font-size: 2.4rem;
+    text-align: center;
 }
 
 .textoNosotros {
-    font-size: 1.6rem;
-    padding-bottom: 5%;
+    font-size: 1.4rem;
+    padding: 1rem 2rem 1rem 10rem;
 }
 
 p {

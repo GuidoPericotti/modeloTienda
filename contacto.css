@@ -1,3 +1,6 @@
+main {
+    background-image: linear-gradient(to bottom, #fff, #007bff);
+}
 .fieldset {
     display: flex;
     flex-flow: column nowrap;
