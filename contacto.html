@@ -26,37 +26,38 @@
     <!--MAIN & CONTENT-->
     <main>
         <fieldset class="fieldset">
-            <form name="formulario" class="formulario">
+            <form name="formulario" class="formulario"action="https://formspree.io/f/mwkdwqnn" onsubmit="return validar()" method="POST">
                 <h2>Formulario de Consultas</h2>
-                <label class="label" for="nombre">Nombres</label>
-                <input class="formInput" type="text" name="nombre" required placeholder="Juan...">
-                <label class="label" for="apellido">Apellidos</label>
-                <input class="formInput" type="text" name="apellido" required placeholder="Gomez...">
-                <label class="label" for="email">Email</label>
-                <input class="formInput" type="email" name="email" required size="20" placeholder="miTienda@example.com">
+                <label class="label" for="nombre">Nombres<abbr aria-label="required">*</abbr></label>
+                <input class="formInput" type="text" name="nombre" id="nombre" required placeholder="Juan...">
+                <label class="label" for="apellido">Apellidos<abbr aria-label="required">*</abbr></label>
+                <input class="formInput" type="text" name="apellido" id="apellido" required placeholder="Gomez...">
+                <label class="label" for="email">Email<abbr aria-label="required">*</abbr></label>
+                <input class="formInput" type="email" name="email" id="email" required size="20" placeholder="miTienda@example.com">
                 <label class="label" for="telefono">Telefono</label>
                 <input class="formInput" type="number" name="telefono" size="10" placeholder="1133000587">
                 
                 <div>
-                    <label class="label" for="consulta">Consulta</label>
-                    <select  class="select" name="consulta" required>
-                        <option value="1">...</option>
-                        <option value="2">Pagos</option>
-                        <option value="3">Envios</option>
-                        <option value="4">Devoluciones</option>
-                        <option value="5">Compras</option>
-                        <option value="6">Otro</option>
+                    <label class="label" for="consulta">Consulta<abbr aria-label="required">*</abbr></label>
+                    <select  class="select" name="consulta" id="consulta" required>
+                        <option value="0" disabled selected>...</option>
+                        <option value="1">Pagos</option>
+                        <option value="2">Envios</option>
+                        <option value="3">Devoluciones</option>
+                        <option value="4">Compras</option>
+                        <option value="5">Otro</option>
                     </select>
+
                 </div>
 
-                <textarea name="comentarios" cols="30" rows="10" placeholder="Dejanos tu consulta..."></textarea>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="10" required placeholder="Dejanos tu consulta..."></textarea>
                 
                 <div class="novedades">
                     <input type="checkbox" name="recibir_novedades">
                     <label for="recibir_novedades">Recibir novedades y promociones</label>
                 </div>
                 
-                <input class="submit" type="submit"  value="Enviar datos">
+                <input class="submit" type="submit" value="Enviar datos" onclick="validar()">
             </form>
             <div class="horario">
                 <h4>Nuestro horario de atencion es de: </h4>
@@ -104,5 +105,8 @@
             <a class="dataFiscal" href="http://qr.afip.gob.ar/?qr=vsaPnc3cXT60iCx7lH_tfw,," target="_F960AFIPInfo"><img src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg" border="0"></a>
         </div>
 </footer>
+
+<script src="validar.js"></script>
+
 </body>
 </html>

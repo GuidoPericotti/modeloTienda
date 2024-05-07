@@ -1,3 +1,7 @@
+*{
+    border-style: solid;
+    border-color: red;
+}
 main {
     background-image: linear-gradient(to bottom, #fff, #007bff);
 }
@@ -82,3 +86,36 @@ textarea {
 }
 
 
+/*QUERIES*/
+/*PANTALLAS PEQUEÑAS*/
+@media only screen and (max-width: 600px){
+
+.fieldset {
+    margin: 1% 10% 0%;
+}
+
+.formulario > h2 {
+    font-size: 1.5rem;
+}
+
+.label {
+    font-size: 1rem;
+}
+
+.formInput {
+    padding: 2%;
+    margin: 2% 0%;
+    font-size: 1.2rem;
+}
+
+textarea {
+    font-size: 1rem;
+}
+
+.horario {
+    padding: 10% 0% 10% 45%;
+    font-size: 1.2rem;
+
+}
+
+}
