@@ -1,0 +1,90 @@
+.flex-main {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.flex-card {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    flex: 20%;
+}
+.flex-card:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+.text-card {
+    padding: 1rem;
+}
+
+.text-card > h3 {
+    font-weight: 400;
+}
+
+
+.text-card > p {
+    font-weight: 100;
+}
+
+.text-card > ul {
+    margin-left: 1rem;
+    font-weight: 100;
+}
+
+.slider-frame {
+    overflow: hidden;
+}
+
+.slider-frame ul {
+    display: flex;
+    width: 200%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+}
+.submit > input {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 20px;
+    background-color: #7f8181;
+    color: black;
+    border: none;
+    font-size: 1.3rem;
+}
+.submit > input:hover {
+    background-color: #bebcbc;
+    color: black;
+    cursor: pointer;
+}
+@keyframes slide {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    /*50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}*/
+}
