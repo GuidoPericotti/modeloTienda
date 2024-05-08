@@ -1,17 +1,39 @@
 
 function validar() {
     /*Validar Nombre*/
-    let x=document.getElementById("nombre").value;
-    if (x == 0) {
-      alert("Falta rellenar el campo NOMBRE");
-      return false;
+    var nombre = document.getElementById("nombre");
+    var expRegNombre = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
+    if (!expRegNombre.test(nombre.value)){
+        if ((nombre=nombre.value) == 0) {
+            alert("El campo nombre es requerido");
+        }else{
+            alert("El campo nombre admite letras y espacios");
+        }
+        return false;
     }
   
     /*Validar Apellido*/
-    let y=document.getElementById("apellido").value;
-    if (y == 0) {
-      alert("Falta rellenar el campo APELLIDO");
-      return false;
+    var apellido = document.getElementById("apellido");
+    var expRegApellido = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
+    if (!expRegApellido.test(apellido.value)){
+        if ((apellido=apellido.value) == 0) {
+            alert("El campo apellido es requerido");
+        }else{
+            alert("El campo apellido admite letras y espacios");
+        }
+        return false;
+    }
+
+    /*Validar Correo*/
+    var z=document.getElementById("email");
+    var validEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+    if (!validEmail.test(z.value)){
+        if ((z=z.value) == 0) {
+            alert("Falta rellenar el campo EMAIL");
+        }else{
+            alert("Formato de EMAIL invalido");
+        }
+        return false;
     }
 
     /*Validar SeleccionConsulta*/
@@ -27,20 +49,4 @@ function validar() {
         alert("Falta rellenar el campo comentarios");
         return false;
     }
-
-    /*Validar Correo*/
-    var z=document.getElementById("email");
-    var validEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
-    if (validEmail.test(z.value)){
-        return true;
-    }else{
-        if ((z=z.value) == 0) {
-            alert("Falta rellenar el campo EMAIL");
-            return false;
-        }else{
-            alert("Formato de EMAIL invalido");
-
-        }
-    }    
-
 }
