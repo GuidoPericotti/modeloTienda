@@ -436,6 +436,93 @@ h1 {
 }
 /*PANTALLAS MEDIANAS*/
 @media only screen and (min-width: 601px) and (max-width: 1024px){
+/*HEADER & NAV*/
+header {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #fff;
+    height: 16vh;
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+}
+
+/*MAIN & CONTENT*/
+.first-section {
+    display: flex;
+    height: 54vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/*FOOTER*/
+
+/*redes*/
+.redesFooter {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20vh;
+    width: 30vw;
+    font-size: 1rem;
+}
+
+#redes {
+    padding: 4px;
+    margin: 2px;
+}
+
+/*suscripcion*/
+.suscripcion {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20vh;
+    width: 30vw;
+    font-size: 1rem;
+}
+
+.suscripcion > h2 {
+    font-size: 1.4rem;
+}
+
+.correo {
+    width: 100%;
+    background: #ebebeb;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #b4b5b6;
+    font-size: 1rem;
+}
+
+/*faq's*/
+.faqs {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20vh;
+    width: 30vw;
+    font-size: 1rem;
+}
+
+.faqs > h3 {
+    font-size: 1.4rem;
+}
+
+/*politicasDataFiscal*/
+.legales {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-around;
+    align-items: center;
+    margin: 1rem 2rem;
+}
 
 }
 /*PANTALLAS GRANDES*/

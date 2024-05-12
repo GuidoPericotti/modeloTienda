@@ -1,7 +1,3 @@
-/**{
-    border-style: solid;
-    border-color: red;
-}*/
 main {
 display: flex;
 flex-flow: column nowrap;
@@ -9,12 +5,12 @@ width: 100%;
 }
 
 h2 {
-    font-size: 2.4rem;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 1%;
 }
 .nosotros {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-left: 10%;
     margin-bottom: 2px;
     width: 80%;
@@ -26,6 +22,7 @@ section {
     flex-flow: row nowrap;
     justify-content: space-around;
     margin: 3%;
+    align-items: center;
 }
 
 .divSection {
@@ -35,17 +32,20 @@ section {
 }
 .divSection > h4 {
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-top: 2%;
 }
 .divSection > p {
     margin: 2%;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 section > img {
     display: flex;
     width: 30%;
+    height: fit-content;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 1px rgb(0, 0, 0);
 }
 
 
