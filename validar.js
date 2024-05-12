@@ -1,4 +1,3 @@
-
 function validar() {
     /*Validar Nombre*/
     var nombre = document.getElementById("nombre");
@@ -11,7 +10,7 @@ function validar() {
         }
         return false;
     }
-  
+
     /*Validar Apellido*/
     var apellido = document.getElementById("apellido");
     var expRegApellido = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
